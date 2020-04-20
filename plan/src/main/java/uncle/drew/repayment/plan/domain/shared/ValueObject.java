@@ -1,4 +1,4 @@
-package java.domain.shared;
+package uncle.drew.repayment.plan.domain.shared;
 
 import java.io.Serializable;
 

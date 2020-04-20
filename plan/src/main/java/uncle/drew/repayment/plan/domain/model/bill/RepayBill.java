@@ -1,4 +1,4 @@
-package java.domain.model.bill;
+package uncle.drew.repayment.plan.domain.model.bill;
 
 public class RepayBill extends PlanBill{
 

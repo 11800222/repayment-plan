@@ -1,6 +1,7 @@
-package java.domain.model.plan;
+package uncle.drew.repayment.plan.domain.model.plan;
 
-import domain.shared.Entity;
+
+import uncle.drew.repayment.plan.domain.shared.Entity;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class RepayPlan implements Entity {
 
     private ChannelInfo channelCode;
 
-    private List<Long> bills;
+    private List<RepayCycle> repayCycles;
 
     private PlanState planState;
 

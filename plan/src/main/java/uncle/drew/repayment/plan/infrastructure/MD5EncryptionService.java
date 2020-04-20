@@ -12,7 +12,7 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-package java.infrastructure;
+package uncle.drew.repayment.plan.infrastructure;
 
 public class MD5EncryptionService  {
 

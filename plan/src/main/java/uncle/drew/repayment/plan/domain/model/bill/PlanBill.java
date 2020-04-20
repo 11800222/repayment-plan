@@ -1,6 +1,8 @@
-package java.domain.model.bill;
+package uncle.drew.repayment.plan.domain.model.bill;
 
-import domain.shared.Entity;
+
+
+import uncle.drew.repayment.plan.domain.shared.Entity;
 
 import java.util.Date;
 

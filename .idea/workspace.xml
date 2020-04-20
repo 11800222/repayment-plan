@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b169529a-4d85-40cb-8ce9-90242867b914" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/command/QSQSQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/query/QSQSQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/PlanState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/BillAmountAllocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/RepayPlanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/AbstractBillTimeScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/DesignatedBillTimeScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/DesignatedCycleSingleDayStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/MaxBillTimeScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/MaxCycleSingleDayStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/SingleDayScheduleStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/SingleDayScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/TimeRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/application/command/QSQSQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/application/query/QSQSQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/bill/ConsumeBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/ConsumeBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/bill/PlanBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/PlanBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/bill/RepayBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/RepayBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/BillAmountAllocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/BillTimeScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/ChannelInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/ChannelInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/PlanState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/RepayCardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCardInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/RepayPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/RepayPlanFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/shared/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/shared/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/shared/ValueObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/shared/ValueObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/infrastructure/MD5EncryptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/MD5EncryptionService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +41,14 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,31 +72,28 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="78" />
-    <option name="y" value="37" />
-    <option name="width" value="1619" />
-    <option name="height" value="988" />
-  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/plan/src/main/java/java/application" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15230875" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="uncle.drew.repayment.plan.domain.model.plan.generate" />
       <recent name="java.application.query" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -77,6 +111,16 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -107,90 +151,7 @@
       </map>
     </option>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>plan</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

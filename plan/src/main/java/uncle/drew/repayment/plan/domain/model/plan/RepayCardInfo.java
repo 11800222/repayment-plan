@@ -1,7 +1,7 @@
-package java.domain.model.plan;
+package uncle.drew.repayment.plan.domain.model.plan;
 
 
-import domain.shared.ValueObject;
+import uncle.drew.repayment.plan.domain.shared.ValueObject;
 
 class RepayCardInfo implements ValueObject<RepayCardInfo> {
     /**

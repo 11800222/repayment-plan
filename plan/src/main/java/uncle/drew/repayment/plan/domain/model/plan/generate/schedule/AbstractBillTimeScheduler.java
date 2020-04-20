@@ -1,0 +1,55 @@
+package uncle.drew.repayment.plan.domain.model.plan.generate.schedule;
+
+import org.apache.commons.lang3.time.DateUtils;
+import uncle.drew.repayment.plan.domain.model.plan.RepayCycle;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+
+public abstract class AbstractBillTimeScheduler {
+    protected final TimeRange timeRange;
+
+    protected final Date dayAllowBeginTime;
+
+    protected final Date dayAllowEndTime;
+
+    protected final Integer hourIntervals;
+
+    protected final Integer cycle;
+
+
+    public AbstractBillTimeScheduler(Date beginTime, Date endTime, Date dayAllowBeginTime, Date dayAllowEndTime, Integer hourIntervals, Integer cycle) {
+        this.hourIntervals = hourIntervals;
+        this.cycle = cycle;
+        timeRange = new TimeRange(beginTime, endTime);
+        this.dayAllowBeginTime = dayAllowBeginTime;
+        this.dayAllowEndTime = dayAllowEndTime;
+    }
+
+    public ArrayList<RepayCycle> generateTemplate(Integer totalCycleAmount) {
+        ArrayList<RepayCycle> repayCycles = new ArrayList<>();
+        Integer leftTotalCycleAmount = totalCycleAmount;
+        Date currentDay = timeRange.getBegin();
+        while (!currentDay.after(timeRange.getEnd())) {
+            if (DateUtils.isSameDay(currentDay, new Date())) {
+                //当天计划处理
+                Date currentDayBeginTime = timeRange.getBegin().after(dayAllowBeginTime) ? timeRange.getBegin() : dayAllowBeginTime;
+                if (timeRange.getBegin().before(dayAllowEndTime)) {
+                    repayCycles.addAll(scheduleForSingleDay(currentDayBeginTime, dayAllowEndTime, leftTotalCycleAmount));
+                }
+            } else {
+                repayCycles.addAll(scheduleForSingleDay(dayAllowBeginTime, dayAllowEndTime, leftTotalCycleAmount));
+            }
+            leftTotalCycleAmount = totalCycleAmount - repayCycles.size();
+            DateUtils.addDays(currentDay, 1);
+        }
+        return repayCycles;
+    }
+
+    abstract ArrayList<RepayCycle> scheduleForFirstDay(Date begin, Date end, Integer leftTotalCycleAmount);
+
+
+    abstract ArrayList<RepayCycle> scheduleForSingleDay(Date begin, Date end, Integer leftTotalCycleAmount);
+}
+

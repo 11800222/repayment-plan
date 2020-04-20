@@ -1,4 +1,4 @@
-package java.domain.model.bill;
+package uncle.drew.repayment.plan.domain.model.bill;
 
 import java.math.BigDecimal;
 
