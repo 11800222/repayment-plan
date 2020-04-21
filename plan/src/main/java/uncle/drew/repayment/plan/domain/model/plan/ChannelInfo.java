@@ -3,7 +3,9 @@ package uncle.drew.repayment.plan.domain.model.plan;
 
 import uncle.drew.repayment.plan.domain.shared.ValueObject;
 
-class ChannelInfo implements ValueObject<ChannelInfo> {
+import java.util.Date;
+
+public class ChannelInfo implements ValueObject<ChannelInfo> {
 
     /**
      * 渠道编码
@@ -13,15 +15,40 @@ class ChannelInfo implements ValueObject<ChannelInfo> {
     /**
      * 起始交易时间,
      */
-    private String startTime;
+    private Date startTime;
 
     /**
      * 终止交易时间
      */
-    private String endTime;
+    private Date endTime;
+
+    private int minConsumeAmount;
+
+    private int maxConsumeAmount;
 
 
+    @Override
     public boolean sameValueAs(ChannelInfo other) {
         return false;
+    }
+
+    public String getChannelCode() {
+        return channelCode;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public int getMinConsumeAmount() {
+        return minConsumeAmount;
+    }
+
+    public int getMaxConsumeAmount() {
+        return maxConsumeAmount;
     }
 }

@@ -3,7 +3,9 @@ package uncle.drew.repayment.plan.domain.model.plan;
 
 import uncle.drew.repayment.plan.domain.shared.ValueObject;
 
-class RepayCardInfo implements ValueObject<RepayCardInfo> {
+import java.util.Date;
+
+public class RepayCardInfo implements ValueObject<RepayCardInfo> {
     /**
      * 卡号
      */
@@ -12,16 +14,28 @@ class RepayCardInfo implements ValueObject<RepayCardInfo> {
     /**
      * 信用卡账单日
      */
-    private String billDate;
+    private Date billDate;
 
     /**
      * 信用卡还款日
      */
-    private String repaymentDate;
+    private Date repaymentDate;
 
 
     @Override
     public boolean sameValueAs(RepayCardInfo other) {
         return false;
+    }
+
+    public String getCardNo() {
+        return cardNo;
+    }
+
+    public Date getBillDate() {
+        return billDate;
+    }
+
+    public Date getRepaymentDate() {
+        return repaymentDate;
     }
 }

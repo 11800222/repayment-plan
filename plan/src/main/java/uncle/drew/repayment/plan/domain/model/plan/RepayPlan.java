@@ -5,22 +5,6 @@ import uncle.drew.repayment.plan.domain.shared.Entity;
 
 import java.util.List;
 
-public class RepayPlan implements Entity {
+public interface RepayPlan  {
 
-    private Long id;
-
-    private Long userId;
-
-    private RepayCardInfo repayCardInfo;
-
-    private ChannelInfo channelCode;
-
-    private List<RepayCycle> repayCycles;
-
-    private PlanState planState;
-
-    @Override
-    public boolean sameIdentityAs(Object other) {
-        return false;
-    }
 }

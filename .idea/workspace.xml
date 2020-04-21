@@ -2,36 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b169529a-4d85-40cb-8ce9-90242867b914" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/command/QSQSQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/query/QSQSQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/PlanState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/BillAmountAllocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/RepayPlanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/AbstractBillTimeScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/DesignatedBillTimeScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/DesignatedCycleSingleDayStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/MaxBillTimeScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/MaxCycleSingleDayStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/SingleDayScheduleStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/SingleDayScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/TimeRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/BillState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/DefaultRepayPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/DefaultRepayPlanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/allocate/BillAmountAllocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/allocate/SingleCycleAllocator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/application/command/QSQSQ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/application/query/QSQSQ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/bill/ConsumeBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/ConsumeBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/bill/PlanBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/PlanBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/bill/RepayBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/RepayBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/BillAmountAllocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/BillTimeScheduler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/ChannelInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/ChannelInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/PlanState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/RepayCardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCardInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/RepayPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/model/plan/RepayPlanFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/shared/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/shared/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/domain/shared/ValueObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/shared/ValueObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/java/infrastructure/MD5EncryptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/MD5EncryptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/PlanBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/PlanBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/ChannelInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/ChannelInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCardInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/BillAmountAllocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/RepayPlanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/RepayPlanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/AbstractBillTimeScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/AbstractBillTimeScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/DesignatedBillTimeScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/DesignatedBillTimeScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/MaxBillTimeScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/generate/schedule/MaxBillTimeScheduler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +59,7 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectId" id="1apT7zsfKkeZcNMv3QJnTpVUP5v" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -89,11 +77,17 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15230875" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="uncle.drew.repayment.plan.domain.model.plan.generate" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="uncle.drew.repayment.plan.domain.model.plan" />
+      <recent name="uncle.drew.repayment.plan.domain.model.bill" />
+      <recent name="uncle.drew.repayment.plan.domain.model.plan.generate" />
+      <recent name="uncle.drew.repayment.plan.domain.model.plan.generate.allocate" />
       <recent name="java.application.query" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -112,6 +106,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="AbstractBillTimeScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uncle.drew.repayment.plan.domain.model.plan.generate.schedule.AbstractBillTimeScheduler" />
+      <module name="plan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uncle.drew.repayment.plan.domain.model.plan.generate.schedule.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AbstractBillTimeScheduler" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -134,6 +148,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587290059259</updated>
       <workItem from="1587290061263" duration="7266000" />
+      <workItem from="1587431377047" duration="1206000" />
+      <workItem from="1587432611587" duration="21053000" />
     </task>
     <servers />
   </component>
@@ -145,7 +161,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

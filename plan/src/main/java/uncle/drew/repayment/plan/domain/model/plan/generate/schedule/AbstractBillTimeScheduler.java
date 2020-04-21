@@ -27,22 +27,24 @@ public abstract class AbstractBillTimeScheduler {
         this.dayAllowEndTime = dayAllowEndTime;
     }
 
-    public ArrayList<RepayCycle> generateTemplate(Integer totalCycleAmount) {
-        ArrayList<RepayCycle> repayCycles = new ArrayList<>();
-        Integer leftTotalCycleAmount = totalCycleAmount;
+    /**
+     * schedule模板方法
+     */
+    public ArrayList<RepayCycle> generateSchedule(int totalCycleAmount) {
+        ArrayList<RepayCycle> repayCycles = new ArrayList<RepayCycle>();
         Date currentDay = timeRange.getBegin();
         while (!currentDay.after(timeRange.getEnd())) {
             if (DateUtils.isSameDay(currentDay, new Date())) {
                 //当天计划处理
                 Date currentDayBeginTime = timeRange.getBegin().after(dayAllowBeginTime) ? timeRange.getBegin() : dayAllowBeginTime;
                 if (timeRange.getBegin().before(dayAllowEndTime)) {
-                    repayCycles.addAll(scheduleForSingleDay(currentDayBeginTime, dayAllowEndTime, leftTotalCycleAmount));
+                    repayCycles.addAll(scheduleForFirstDay(currentDayBeginTime, dayAllowEndTime, totalCycleAmount));
                 }
             } else {
-                repayCycles.addAll(scheduleForSingleDay(dayAllowBeginTime, dayAllowEndTime, leftTotalCycleAmount));
+                repayCycles.addAll(scheduleForSingleDay(dayAllowBeginTime, dayAllowEndTime, totalCycleAmount));
             }
-            leftTotalCycleAmount = totalCycleAmount - repayCycles.size();
             DateUtils.addDays(currentDay, 1);
+            totalCycleAmount = totalCycleAmount - repayCycles.size();
         }
         return repayCycles;
     }

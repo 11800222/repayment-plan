@@ -22,4 +22,6 @@ public class MaxBillTimeScheduler extends AbstractBillTimeScheduler {
     ArrayList<RepayCycle> scheduleForSingleDay(Date begin, Date end, Integer totalCycle) {
         return new SingleDayScheduler(begin, end).schedule(hourIntervals, cycle, new MaxCycleSingleDayStrategy());
     }
+
+
 }

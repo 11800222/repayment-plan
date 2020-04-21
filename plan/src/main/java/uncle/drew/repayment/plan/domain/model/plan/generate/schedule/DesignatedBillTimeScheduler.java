@@ -24,5 +24,4 @@ public class DesignatedBillTimeScheduler extends AbstractBillTimeScheduler {
         return null;
     }
 
-    calFirst
-}
+ }

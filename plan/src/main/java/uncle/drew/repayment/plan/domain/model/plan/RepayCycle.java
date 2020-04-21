@@ -16,4 +16,7 @@ public class RepayCycle {
         this.cycle = 1;
     }
 
+    public int getRepayAmount() {
+        return 0;
+    }
 }
