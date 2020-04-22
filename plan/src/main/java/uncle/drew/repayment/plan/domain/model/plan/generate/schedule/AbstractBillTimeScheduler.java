@@ -9,22 +9,16 @@ import java.util.Date;
 
 public abstract class AbstractBillTimeScheduler {
 
-    protected final Date dayAllowBeginTime;
+    protected final ScheduleLimits scheduleLimits;
 
-    protected final Date dayAllowEndTime;
-
-    protected final Integer hourIntervals;
-
-    protected final Integer cycle;
+    protected final ScheduleStrategy scheduleStrategy;
 
     /**
      * 这些参数能作为AbstractBillTimeScheduler的字段，是因为它们能体现出AbstractBillTimeScheduler的自身属性
      */
-    public AbstractBillTimeScheduler(Date dayAllowBeginTime, Date dayAllowEndTime, Integer hourIntervals, Integer cycle) {
-        this.hourIntervals = hourIntervals;
-        this.cycle = cycle;
-        this.dayAllowBeginTime = dayAllowBeginTime;
-        this.dayAllowEndTime = dayAllowEndTime;
+    public AbstractBillTimeScheduler(ScheduleLimits scheduleLimits, ScheduleStrategy scheduleStrategy) {
+        this.scheduleLimits = scheduleLimits;
+        this.scheduleStrategy = scheduleStrategy;
     }
 
     /**
@@ -37,14 +31,14 @@ public abstract class AbstractBillTimeScheduler {
         Date currentDay = timeRange.getBegin();
         while (!currentDay.after(timeRange.getEnd())) {
             if (DateUtils.isSameDay(currentDay, new Date())) {
-                Date currentDayBeginTime = timeRange.getBegin().after(dayAllowBeginTime) ? timeRange.getBegin() : dayAllowBeginTime;
-                if (timeRange.getBegin().before(dayAllowEndTime)) {
+                Date currentDayBeginTime = timeRange.getBegin().after(scheduleLimits.getDayAllowBeginTime()) ? timeRange.getBegin() : scheduleLimits.getDayAllowBeginTime();
+                if (timeRange.getBegin().before(scheduleLimits.getDayAllowEndTime())) {
                     //由子类具体实现该一步骤
-                    repayCycles.addAll(scheduleForFirstDay(currentDayBeginTime, dayAllowEndTime, totalCycleAmount));
+                    repayCycles.addAll(scheduleForFirstDay(currentDayBeginTime, scheduleLimits.getDayAllowEndTime(), totalCycleAmount));
                 }
             } else {
                 //由子类具体实现该一步骤
-                repayCycles.addAll(scheduleForSingleDay(dayAllowBeginTime, dayAllowEndTime, totalCycleAmount));
+                repayCycles.addAll(scheduleForSingleDay(scheduleLimits.getDayAllowBeginTime(), scheduleLimits.getDayAllowEndTime(), totalCycleAmount));
             }
             DateUtils.addDays(currentDay, 1);
             totalCycleAmount = totalCycleAmount - repayCycles.size();

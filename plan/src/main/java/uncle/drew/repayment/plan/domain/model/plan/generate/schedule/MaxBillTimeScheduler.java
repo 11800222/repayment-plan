@@ -8,19 +8,18 @@ import java.util.Date;
 
 public class MaxBillTimeScheduler extends AbstractBillTimeScheduler {
 
-
-    public MaxBillTimeScheduler(Date beginTime, Date endTime, Date dayAllowBeginTime, Date dayAllowEndTime, Integer hourIntervals, Integer cycle) {
-        super(beginTime, endTime, dayAllowBeginTime, dayAllowEndTime, hourIntervals, cycle);
+    public MaxBillTimeScheduler(ScheduleLimits scheduleLimits, ScheduleStrategy scheduleStrategy) {
+        super(scheduleLimits, scheduleStrategy);
     }
 
     @Override
     ArrayList<RepayCycle> scheduleForFirstDay(Date begin, Date end, Integer totalCycle) {
-        return new SingleDayScheduler(begin, end).schedule(hourIntervals, cycle, new MaxCycleSingleDayStrategy());
+        return new SingleDayScheduler(begin, end).schedule(scheduleStrategy.getHourIntervals(), scheduleStrategy.getCycle());
     }
 
     @Override
     ArrayList<RepayCycle> scheduleForSingleDay(Date begin, Date end, Integer totalCycle) {
-        return new SingleDayScheduler(begin, end).schedule(hourIntervals, cycle, new MaxCycleSingleDayStrategy());
+        return new SingleDayScheduler(begin, end).schedule(scheduleStrategy.getHourIntervals(), scheduleStrategy.getCycle());
     }
 
 

@@ -15,12 +15,15 @@ class SingleDayScheduler {
         }
     }
 
-    ArrayList<RepayCycle> schedule(int hourIntervals, int cycle, SingleDayScheduleStrategy scheduleStrategy) {
-        ArrayList<Date> times = scheduleStrategy.schedule(hourIntervals, cycle, timeRange);
+    ArrayList<RepayCycle> schedule(int hourIntervals, int cycle) {
+
         //todo: ArrayList<Date> 转 ArrayList<Cycle>
         return new ArrayList<RepayCycle>();
     }
 
-
+    ArrayList<RepayCycle> schedule(int hourIntervals, int cycle,int totalCycle) {
+        //todo: ArrayList<Date> 转 ArrayList<Cycle>
+        return new ArrayList<RepayCycle>();
+    }
 }
 

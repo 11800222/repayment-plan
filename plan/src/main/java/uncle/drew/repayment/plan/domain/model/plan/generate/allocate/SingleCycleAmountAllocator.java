@@ -6,7 +6,7 @@ import uncle.drew.repayment.plan.domain.model.plan.RepayCycle;
 import java.util.List;
 
 
-class SingleCycleAllocator {
+class SingleCycleAmountAllocator {
 
     private final Integer minBillAmount;
 
@@ -14,7 +14,7 @@ class SingleCycleAllocator {
 
     private final List<String> consumeSplitScales;
 
-    public SingleCycleAllocator(Integer minBillAmount, Integer maxBillAmount, List<String> consumeSplitScales) {
+    public SingleCycleAmountAllocator(Integer minBillAmount, Integer maxBillAmount, List<String> consumeSplitScales) {
         this.minBillAmount = minBillAmount;
         this.maxBillAmount = maxBillAmount;
         this.consumeSplitScales = consumeSplitScales;

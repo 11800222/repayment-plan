@@ -9,8 +9,8 @@ import java.util.Date;
 public class DesignatedBillTimeScheduler extends AbstractBillTimeScheduler {
 
 
-    public DesignatedBillTimeScheduler(Date beginTime, Date endTime, Date dayAllowBeginTime, Date dayAllowEndTime, Integer hourIntervals, Integer cycle) {
-        super(beginTime, endTime, dayAllowBeginTime, dayAllowEndTime, hourIntervals, cycle);
+    public DesignatedBillTimeScheduler(ScheduleLimits scheduleLimits, ScheduleStrategy scheduleStrategy) {
+        super(scheduleLimits, scheduleStrategy);
     }
 
     @Override
@@ -21,7 +21,10 @@ public class DesignatedBillTimeScheduler extends AbstractBillTimeScheduler {
 
     @Override
     ArrayList<RepayCycle> scheduleForSingleDay(Date begin, Date end, Integer totalCycle) {
-        return null;
+
+        return new SingleDayScheduler(begin, end).schedule(scheduleStrategy.getHourIntervals(), scheduleStrategy.getCycle(),totalCycle);
+
+
     }
 
  }

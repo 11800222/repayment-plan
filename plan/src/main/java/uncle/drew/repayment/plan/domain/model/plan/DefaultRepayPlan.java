@@ -2,7 +2,6 @@ package uncle.drew.repayment.plan.domain.model.plan;
 
 import uncle.drew.repayment.plan.domain.shared.Entity;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 public class DefaultRepayPlan implements RepayPlan, Entity {
