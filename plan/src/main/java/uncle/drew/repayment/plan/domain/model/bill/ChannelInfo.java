@@ -1,4 +1,4 @@
-package uncle.drew.repayment.plan.domain.model.plan;
+package uncle.drew.repayment.plan.domain.model.bill;
 
 
 import uncle.drew.repayment.plan.domain.shared.ValueObject;

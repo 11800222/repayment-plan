@@ -9,14 +9,6 @@ public class DefaultRepayPlan implements RepayPlan, Entity {
 
     private Long id;
 
-    private Long userId;
-
-    private RepayCardInfo repayCardInfo;
-
-    private ChannelInfo channelCode;
-
-    private RepayConfig repayConfig;
-
     private List<RepayCycle> repayCycles;
 
     private PlanState planState;

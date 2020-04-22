@@ -1,5 +1,7 @@
 package uncle.drew.repayment.plan.domain.model.plan.generate;
 
+import uncle.drew.repayment.plan.domain.model.bill.ChannelInfo;
+import uncle.drew.repayment.plan.domain.model.bill.RepayCardInfo;
 import uncle.drew.repayment.plan.domain.model.plan.*;
 import uncle.drew.repayment.plan.domain.model.plan.generate.allocate.BillAmountAllocator;
 import uncle.drew.repayment.plan.domain.model.plan.generate.schedule.AbstractBillTimeScheduler;
@@ -9,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class DefaultRepayPlanFactory implements RepayPlanFactory {
+
     private final ChannelInfo channelInfo;
 
     private final RepayCardInfo repayCardInfo;

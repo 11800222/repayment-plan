@@ -17,6 +17,10 @@ public class PlanBill implements Entity {
 
     private BillState billState;
 
+    private String repayCardId;
+
+    private String channelCode;
+
     @Override
     public boolean sameIdentityAs(Object other) {
         return false;
