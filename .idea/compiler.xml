@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user" />
-        <module name="channel" />
+        <module name="commons" />
         <module name="plan" />
+        <module name="user-api" />
+        <module name="channel-api" />
       </profile>
     </annotationProcessing>
   </component>

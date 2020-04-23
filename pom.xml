@@ -14,6 +14,7 @@
         <module>plan</module>
         <module>channel</module>
         <module>user</module>
+        <module>commons</module>
     </modules>
 
     <dependencies>

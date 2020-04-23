@@ -8,9 +8,22 @@
     <artifactId>plan</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-
     <dependencies>
+        <dependency>
+            <groupId>com.uncle.drew</groupId>
+            <artifactId>channel-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.uncle.drew</groupId>
+            <artifactId>user-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.uncle.drew</groupId>
+            <artifactId>commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
