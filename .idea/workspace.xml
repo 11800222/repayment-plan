@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b169529a-4d85-40cb-8ce9-90242867b914" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/ChannelLimitations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/command/PlanCmdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/command/PlanCmdService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/Scheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/TimeSpan.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/TimeSpan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/service/AllocateLimitsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/service/ChannelLimitationsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/service/RepayPlanBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/service/RepayPlanBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/service/SchedulerLimitsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/service/ChannelAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/service/ChannelAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/service/RPCChannelAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/service/RPCChannelAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/service/TranslatingAllocateLimitsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/service/TranslatingChannelLimitationsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/infrastructure/service/TranslatingScheduleLimitsServiceImpl.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
