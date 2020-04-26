@@ -13,7 +13,7 @@ public class TimeSpan {
     private final Date begin;
     private final Date end;
 
-    TimeSpan(Date begin, Date end) {
+    public TimeSpan(Date begin, Date end) {
         if (begin.after(end)) {
             throw new IllegalArgumentException("开始时间大于结束时间");
         }

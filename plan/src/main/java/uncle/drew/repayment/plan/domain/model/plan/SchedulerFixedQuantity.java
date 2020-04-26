@@ -11,14 +11,17 @@ public class SchedulerFixedQuantity extends Scheduler {
     }
 
     @Override
-    ArrayList<RepayPlanCycle> scheduleForFirstDay(Date begin, Date end, Integer totalCycle) {
-        return new SchedulerSingleDay(begin, end).schedule(schedulePolicy.getHourIntervals(), schedulePolicy.getCycle());
+    ArrayList<RepayPlanCycle> scheduleForFirstDay(TimeSpan timeSpan, Integer totalCycle) {
+        Long avgCycle = totalCycle / timeSpan.daysApart();
+        Long expectedCycle = totalCycle % timeSpan.daysApart() == 0 ? totalCycle / timeSpan.daysApart() : totalCycle % timeSpan.daysApart();
+        return null;
     }
 
     @Override
-    ArrayList<RepayPlanCycle> scheduleForSingleDay(Date begin, Date end, Integer totalCycle) {
-        return new SchedulerSingleDay(begin, end).schedule(schedulePolicy.getHourIntervals(), schedulePolicy.getCycle());
+    ArrayList<RepayPlanCycle> scheduleForSingleDay(TimeSpan timeSpan, Integer leftTotalCycleAmount) {
+        return null;
     }
+
 
 
 }

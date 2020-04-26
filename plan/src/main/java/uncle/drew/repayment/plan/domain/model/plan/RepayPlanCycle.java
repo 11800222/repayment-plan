@@ -23,4 +23,16 @@ public class RepayPlanCycle {
     public int getRepayAmount() {
         return 0;
     }
+
+    public ArrayList<BillConsume> getConsumes() {
+        return consumes;
+    }
+
+    public BillRepay getBillRepay() {
+        return billRepay;
+    }
+
+    public int getCycle() {
+        return cycle;
+    }
 }

@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b169529a-4d85-40cb-8ce9-90242867b914" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/command/PlanCmdService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/application/query/QSQSQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/BillBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/BillBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/BillConsume.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/BillConsume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/BillRepay.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/bill/BillRepay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/Allocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/Allocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlanCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlanCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlanState.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/RepayPlanState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/SchedulerFixedQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/SchedulerFixedQuantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/SchedulerMaxQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/SchedulerMaxQuantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/TimeSpan.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/model/plan/TimeSpan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/service/RepayPlanBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/plan/src/main/java/uncle/drew/repayment/plan/domain/service/RepayPlanBuilder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,18 +76,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/commons/src/main/java/common" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15230875" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workCopy\repayment-plan\commons\src\main\java\common" />
-      <recent name="D:\workCopy\repayment-plan\commons\src\main\java" />
-      <recent name="D:\workCopy\repayment-plan\channel\channel-api\src\main\java" />
-      <recent name="D:\workCopy\repayment-plan\channel" />
-      <recent name="D:\workCopy\repayment-plan\plan\src\main\java\uncle\drew\repayment\plan\domain\model\bill" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="interfaces" />
+      <recent name="uncle.drew.repayment.plan.domain.model.plan.generate.allocate" />
+      <recent name="uncle.drew.repayment.plan.domain.model.plan.generate" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="uncle.drew.repayment.plan.infrastructure.service" />
@@ -82,10 +95,12 @@
       <recent name="uncle.drew.repayment.plan.infrastructure.repo" />
       <recent name="uncle.drew.repayment.plan.domain.model.plan.generate.allocate" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="interfaces" />
-      <recent name="uncle.drew.repayment.plan.domain.model.plan.generate.allocate" />
-      <recent name="uncle.drew.repayment.plan.domain.model.plan.generate" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workCopy\repayment-plan\commons\src\main\java\common" />
+      <recent name="D:\workCopy\repayment-plan\commons\src\main\java" />
+      <recent name="D:\workCopy\repayment-plan\channel\channel-api\src\main\java" />
+      <recent name="D:\workCopy\repayment-plan\channel" />
+      <recent name="D:\workCopy\repayment-plan\plan\src\main\java\uncle\drew\repayment\plan\domain\model\bill" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,6 +156,7 @@
       <workItem from="1587518657803" duration="21733000" />
       <workItem from="1587604921705" duration="14492000" />
       <workItem from="1587691345474" duration="5389000" />
+      <workItem from="1587864009921" duration="7716000" />
     </task>
     <servers />
   </component>

@@ -12,17 +12,14 @@ public class SchedulerMaxQuantity extends Scheduler {
     }
 
     @Override
-    ArrayList<RepayPlanCycle> scheduleForFirstDay(Date begin, Date end, Integer totalCycle) {
-        //todo:对于给定
+    ArrayList<RepayPlanCycle> scheduleForFirstDay(TimeSpan timeSpan, Integer leftTotalCycleAmount) {
         return null;
     }
 
     @Override
-    ArrayList<RepayPlanCycle> scheduleForSingleDay(Date begin, Date end, Integer totalCycle) {
-
-        return new SchedulerSingleDay(begin, end).schedule(schedulePolicy.getHourIntervals(), schedulePolicy.getCycle(), totalCycle);
-
-
+    ArrayList<RepayPlanCycle> scheduleForSingleDay(TimeSpan timeSpan, Integer leftTotalCycleAmount) {
+        return null;
     }
+
 
 }

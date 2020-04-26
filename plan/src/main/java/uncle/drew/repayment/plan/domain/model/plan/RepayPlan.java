@@ -12,7 +12,8 @@ public class RepayPlan extends Entity {
 
     private RepayPlanState repayPlanState;
 
-    public RepayPlan() {
+    public RepayPlan(List<RepayPlanCycle> repayPlanCycles, RepayPlanState repayPlanState) {
+        this.repayPlanCycles = repayPlanCycles;
+        this.repayPlanState = repayPlanState;
     }
-
 }

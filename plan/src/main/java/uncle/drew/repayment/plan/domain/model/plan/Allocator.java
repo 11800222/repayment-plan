@@ -14,16 +14,16 @@ public class Allocator {
         this.allocateLimits = allocateLimits;
     }
 
-    public int calMinTotalCycle(int totalAmount) {
+    public int calMinTotalCycle(Long totalAmount) {
         return 0;
     }
 
-    public int calMaxTotalCycle(int totalAmount) {
+    public int calMaxTotalCycle(Long totalAmount) {
         return 0;
     }
 
-    public void fill(ArrayList<RepayPlanCycle> cycles, int totalAmount) {
-        int avgCycleAmount = totalAmount / cycles.size();
+    public void fill(ArrayList<RepayPlanCycle> cycles, Long totalAmount) {
+        int avgCycleAmount = (int) (totalAmount / cycles.size());
         for (int currentCycleIndex = 0; currentCycleIndex < cycles.size(); currentCycleIndex++) {
             AllocatorSingleCycle allocatorSingleCycle = new AllocatorSingleCycle(allocateLimits.getMinSingleBillAmount()
                     , allocateLimits.getMaxSingleBillAmount(), allocateLimits.getRate(), allocatePolicy.getConsumeSplitScales());
